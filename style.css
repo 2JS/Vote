@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Gamja+Flower');
+
+body {
+	background-color: #2d313c;
+	font-size: 40pt;
+	text-align: center;
+	font-family: 'Gamja Flower', cursive;
+	color: white;
+
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	font-size: 40pt;
+	color: #9dd075;
+}
+
+button[onclick^="dec"] {
+	color: #e74d51;
+}
+
+h3 {
+	counter-increment: h3index;
+}
+
+h3::before {
+	content: counter(h3index) '. ';
+}
+
+#footer {
+	position: fixed;
+	background-color: #53596f;
+	color: lightgrey;
+	text-align: right;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0.5em;
+	font-size: 20pt;
+	font-family: 'Arvo', serif;
+}
+
+#footer > a {
+	color: white;
+}
